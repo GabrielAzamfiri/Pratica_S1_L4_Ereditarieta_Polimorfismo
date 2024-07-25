@@ -1,0 +1,22 @@
+package Lavorare;
+
+import Interfaces.CheckIn;
+
+import java.time.LocalDateTime;
+
+public class Volontario implements CheckIn {
+    private String nome;
+    private int eta;
+    private String cv;
+
+    public Volontario(String nome, int eta, String cv) {
+        this.nome = nome;
+        this.eta = eta;
+        this.cv = cv;
+    }
+
+    @Override
+    public void checkIn() {
+        System.out.println(nome + " fatto il checkIn alle " + LocalDateTime.now());
+    }
+}

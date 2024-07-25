@@ -2,7 +2,7 @@ package Lavorare;
 
 import ENUMS.Dipartimenti;
 
-public class Dipendente {
+public abstract class Dipendente {
 
     /*ATTRIBUTI*/
     private int matricola;
@@ -16,6 +16,11 @@ public class Dipendente {
         this.dipartimento = dipartimento;
     }
 
+    // METODI
+
+    public abstract void calculateSalary();
+
+    
     public int getMatricola() {
         return matricola;
     }
